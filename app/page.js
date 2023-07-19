@@ -5,10 +5,10 @@ export default function Home() {
   return (
 
     <>      <Script
-    strategy="lazyOnload"
+    strategy="afterInteractive"
     src={`https://www.googletagmanager.com/gtag/js?id=G-NCYJ6RRJB7`}
   />
-      <Script strategy="lazyOnload">
+      <Script strategy="afterInteractive">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
