@@ -9,16 +9,16 @@ function CustomApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-YQW6M358QB`}
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-NCYJ6RRJB7`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script strategy="afterInteractive">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-YQW6M358QB', {
+                    gtag('config', 'G-NCYJ6RRJB7', {
                     page_path: window.location.pathname,
                     });
                 `}
